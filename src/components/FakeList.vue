@@ -1,6 +1,7 @@
 <style lang="stylus" scoped>
 .container {
   overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 </style>
 
@@ -104,6 +105,6 @@ export default Vue.extend({
       } = event.srcElement as any;
       this.container = { scrollTop, scrollTopMax, clientHeight, scrollHeight };
     }
-  },
+  }
 });
 </script>
