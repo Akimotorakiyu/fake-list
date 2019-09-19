@@ -30,7 +30,7 @@ export default Vue.extend({
     data: {
       type: Array,
       default: () =>
-        Array.from(Array(100)).map((ele, index) => {
+        Array.from(Array(10000)).map((ele, index) => {
           return { id: index, name: index };
         })
     },
