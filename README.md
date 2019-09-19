@@ -11,3 +11,7 @@ yarn install
 ```
 yarn run serve
 ```
+
+## 思路
+
+不缓存，直接计算出显示区域的item

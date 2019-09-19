@@ -14,13 +14,6 @@ export default Vue.extend({
   components: {
     FakeList
   },
-  data() {
-    return {
-      data: Array.from(Array(100)).map((ele, index) => {
-        return { id: index, name: index };
-      })
-    };
-  }
 });
 </script>
 <style lang="stylus">
