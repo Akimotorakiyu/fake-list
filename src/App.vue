@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <FakeList :data="data" idkey="id"/>
+    <h1>长列表滚动优化</h1>
+    <FakeList/>
   </div>
 </template>
 
