@@ -32,7 +32,7 @@ export default Vue.extend({
     },
     show: {
       type: Number,
-      default: 8
+      default: 10
     },
     cache: {
       type: Number,
