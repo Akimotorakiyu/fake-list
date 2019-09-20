@@ -42,9 +42,9 @@ export default Vue.extend({
   data() {
     return {
       container: {
-        scrollHeight: 4800, // 垂直可滚动高度
+        // scrollHeight: 4800, // 垂直可滚动高度
         clientHeight: 480, // 视口区域高度
-        scrollTopMax: 4320, // 垂直实际最大滚动高度,scrollHeight-clientHeight
+        // scrollTopMax: 4320, // 垂直实际最大滚动高度,scrollHeight-clientHeight
         scrollTop: 0 // 垂直滚动距离
       }
     };
@@ -82,13 +82,13 @@ export default Vue.extend({
       // 渲染信息
       const info = {
         data: showData,
-        showCount: 0,
-        topUnVisiableCount: 0,
+        // showCount: 0,
+        // topUnVisiableCount: 0,
         topDivHeight: 0,
         bottomDivHeight: 0
       };
-      info.topUnVisiableCount = topUnVisiableCount;
-      info.showCount = showCount;
+      // info.topUnVisiableCount = topUnVisiableCount;
+      // info.showCount = showCount;
       info.topDivHeight = topDivHeight;
       info.bottomDivHeight = bottomDivHeight;
 
@@ -99,11 +99,16 @@ export default Vue.extend({
     onScroll(event: Event) {
       const {
         scrollTop,
-        scrollTopMax,
-        clientHeight,
-        scrollHeight
+        // scrollTopMax,
+        clientHeight
+        // scrollHeight
       } = event.srcElement as any;
-      this.container = { scrollTop, scrollTopMax, clientHeight, scrollHeight };
+      this.container = {
+        scrollTop,
+        // scrollTopMax,
+        clientHeight
+        //  scrollHeight
+      };
     }
   }
 });
